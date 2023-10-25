@@ -49,14 +49,20 @@ h4 {
 }
 
 /*container conteudo principal*/
-
-.first-center-container {
-    padding: 15px;
-    margin: 90px;
-    border: 1px solid red;
+.first-conteudo-container {
+    background-color: orange;
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
 }
 
-.first-center-container img {
-    height: 300px;
+.first-conteudo-container img {
+    background-color: gold;
+    padding: 10px;
+    height: 400px;
 }
 
+.first-conteudo-container p {
+    padding: 5px;
+    margin: 0 100px 0 100px;
+}
