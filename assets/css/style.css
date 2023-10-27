@@ -7,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-    font: normal 20pt;
+    box-sizing: border-box;
 }
 
 html {
@@ -18,19 +18,13 @@ html {
 
 /*CONFIGURANDO O HEADER*/
 .heading {
-    overflow: hidden;
+    display: flex;
     background-color: #f1f1f1;
-    padding: 2rem 1rem;
-}
-
-.header-top-img img {
-    height: 10rem;
 }
   
-.heading a {
-    float: left;
-    color: black;
-    text-align: center;
+.heading img {
+    height: 8rem;
+ 
     padding: 1.2rem;
     text-decoration: none;
     font-size: 1.8rem;
@@ -38,10 +32,7 @@ html {
     border-radius: 0.4rem;
 }
   
-.heading a.logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
+
   
 .heading a:hover {
     background-color: #ddd;
@@ -55,7 +46,7 @@ html {
 }
 
 .menu-bar img {
-    height: 6rem;
+    max-height: 6rem;
 }
 
 .menu-bar:hover {
@@ -80,12 +71,11 @@ html {
 
 .button-config {
     font-family: "Bebas Neue";
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: var(--primary-color);
-    padding: 20px 90px 20px 90px;
-    border-radius: 40px;
-    margin-left: -400px;
-    margin-top: 60px;
+    padding: 2rem 9rem 2rem 9rem;
+    width: 38.6rem;
+    border-radius: 40rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
@@ -93,9 +83,8 @@ html {
 .button-config:hover {
     color:var(--background-main-color)
 }
-
 article {
-    background-color: var(--primary-color);
+    background-color: var(--background-main-color);
     color: #373435;
     border-radius: 4px;
     margin: 40px;
@@ -108,25 +97,23 @@ article {
 }
 
 h1 {
-    float: right;
-    padding: 0 210px 50px 210px;
     text-align: center;
     font-family: "Bebas Neue";
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 article img {
-    float: left;
     height: 500px;
-    padding-right: 20px;
 }
 
 article img:hover {
     cursor: pointer;
 }
 
+
+
 h4 {
     font-size: 10pt;
     text-align: center;
     padding: 40px;
-}
+} 
