@@ -1,8 +1,7 @@
 :root {
     --primary-color :  rgb(255, 128, 0);
-    --background-main-color: rgb (0, 0 ,0);
+    --background-main-color: white;
 }
-
 /*Configuração geral*/
 * {
     margin: 0;
@@ -14,59 +13,38 @@ html {
     font-size: 62.5%; /* 1rem = 10px, 62.5% de 16px (tamanho de fonte padrão do navegador) */
 }
 
-
-
 /*CONFIGURANDO O HEADER*/
 .heading {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
+    justify-content: space-between;
     background-color: #f1f1f1;
+    width: 100%;
 }
   
-.heading img {
-    height: 8rem;
- 
-    padding: 1.2rem;
-    text-decoration: none;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    border-radius: 0.4rem;
-}
-  
-
-  
-.heading a:hover {
-    background-color: #ddd;
-    color: black;
-}
-  
-.menu-bar {
-    margin: 1rem;
+.heading .header-top-img img {
+    width: 60%;
+    max-height: 8rem;
     padding: 1rem;
-    float: right;
+    margin: 1rem;
+    margin-left: 4rem;
 }
 
-.menu-bar img {
+.heading .menu-bar img {
+    width: 50%;
     max-height: 6rem;
 }
 
-.menu-bar:hover {
-    background: #ddd;
+.menu-bar {
+    margin: 1rem;
+    padding: 1rem;
+   
 }
 
-/*container conteudo principal*/
-.section {
-   height: 100vh;
-}
-
-.background-primary-color {
-    background-color: var(--background-main-color);
-
-}
-
-.section p {
-    font-family: "calibri light";
-    font-size: 1.9rem;
-    display: inline;
+.heading img:hover {
+    background-color: #ddd;
 }
 
 .button-config {
@@ -81,13 +59,36 @@ html {
 }
 
 .button-config:hover {
-    color:var(--background-main-color)
+    color: var(--background-main-color)
 }
+
+
+/*container conteudo principal*/
+.main-container {
+    min-height: 100vh;
+    padding-top: 80px;
+ }
+ 
+ .background-primary-color {
+     background-color: var(--background-main-color);
+
+ }
+ 
+ 
+ .main-container {
+    display: grid;
+    
+ }
+ 
+ .section p {
+     font-family: "calibri light";
+     font-size: 1.9rem;
+ }
+
 article {
-    background-color: var(--background-main-color);
+    max-width: 100%;
     color: #373435;
     border-radius: 4px;
-    margin: 40px;
     padding-right: 50px;
 }
 
@@ -99,18 +100,16 @@ article {
 h1 {
     text-align: center;
     font-family: "Bebas Neue";
-    font-size: 3rem;
+    font-size: 1rem;
 }
 
 article img {
-    height: 500px;
+    height: 50px;
 }
 
 article img:hover {
     cursor: pointer;
 }
-
-
 
 h4 {
     font-size: 10pt;
