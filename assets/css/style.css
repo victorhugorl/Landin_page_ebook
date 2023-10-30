@@ -152,3 +152,73 @@ h4 {
     text-align: center;
     padding: 40px;
 } 
+
+/*Configurando o forms*/
+
+form {
+    padding: 100px;
+}
+
+.form {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em;
+}
+
+#form-body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    font-family: "Bebas Neue";
+    font-size: 2em;
+}
+
+.content-inputs {
+    display: flex;
+    flex-wrap: wrap; /* itens flexíveis são forçados a ficarem na mesma linha ou podem ser quebradas em varias linhas */
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: .6em 0;
+    padding: .8rem 1.2rem;
+}
+
+.question-box {
+    margin: 1.5em 0;
+}
+
+.question-box input {
+    height: 20px;
+    width: 20px;
+}
+
+.button-send {
+    padding: 2.5rem; /*root em*/
+}
+
+.button-send button {
+    background: var(--primary-color);
+    padding: 2rem 7rem 2rem 7rem;
+    border: none;
+}
+
+.button-send a {
+    font-size: 2em;
+    font-family: "Bebas Neue";
+    color: black;
+    text-decoration: none;
+}
