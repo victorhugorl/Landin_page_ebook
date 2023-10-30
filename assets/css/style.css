@@ -1,5 +1,5 @@
 :root {
-    --primary-color :  rgb(255, 128, 0);
+    --primary-color :  rgb(255, 128, 0); /* variaveis que carregar cor*/
     --background-main-color: white;
 }
 /*Configuração geral*/
@@ -14,7 +14,7 @@ html {
 }
 
 /*CONFIGURANDO O HEADER*/
-.heading {
+.heading { /*aqui eu coloquei com display flex e coloquei posição fixa na tela*/
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@ html {
 }
 
 .menu-bar {
-    margin: 1rem;
+    margin: 1rem; /* aqui estou configurando o menu que tem os três tracinhos*/
     padding: 1rem;
    
 }
@@ -47,6 +47,7 @@ html {
     background-color: #ddd;
 }
 
+/* CONFIGURAÇÃO DO BOTÃO DA PRIMEIRA TELA*/
 .button-config {
     font-family: "Bebas Neue";
     font-size: 3rem;
@@ -64,33 +65,57 @@ html {
 
 
 /*container conteudo principal*/
-.main-container {
+ .main-container{
     min-height: 100vh;
     padding-top: 80px;
+    display: grid;
+    grid-template-columns: 0.75fr 1fr 0.25fr ;
+    grid-template-rows: 0.8fr 0.2fr ;
+    gap: 3rem; 
+    margin-top: 4rem;
+   
  }
+.book-image {
+    padding: 3rem 0rem 0 5rem;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.text {
+  margin-top: 3rem;
+
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.button-config{
+   text-align: center;
+   grid-column: 1 / span 1;
+   grid-row: 2 / span 1;
+   align-self: center;
+   margin: -200px 0 50px 45px  ;
+}
+
  
  .background-primary-color {
      background-color: var(--background-main-color);
 
  }
  
- 
- .main-container {
-    display: grid;
+ .container {
+     display: grid;
     
  }
+
  
- .section p {
+ 
+p {
      font-family: "calibri light";
-     font-size: 1.9rem;
+     font-size: 2.8rem;
+     text-indent: 4rem;
  }
 
-article {
-    max-width: 100%;
-    color: #373435;
-    border-radius: 4px;
-    padding-right: 50px;
-}
+
 
 @font-face {
     font-family: "Bebas Neue";
@@ -100,11 +125,22 @@ article {
 h1 {
     text-align: center;
     font-family: "Bebas Neue";
-    font-size: 1rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+article {
+    max-width: 100%;
+    background-color: orange;
+    color: #373435;
+    border-radius: 4px;
+    
+    padding-right: 50px;
 }
 
 article img {
-    height: 50px;
+    height: 500px; /*atributo que controla o tamanho da imagem 
+    foi você que fez assim ou eu sem querer ?)*/
 }
 
 article img:hover {
