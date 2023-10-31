@@ -53,6 +53,7 @@ html {
     font-size: 3rem;
     background-color: var(--primary-color);
     padding: 2rem 9rem 2rem 9rem;
+    height: 8rem;
     width: 38.6rem;
     border-radius: 40rem;
     cursor: pointer;
@@ -72,46 +73,49 @@ html {
     grid-template-columns: 0.75fr 1fr 0.25fr ;
     grid-template-rows: 0.8fr 0.2fr ;
     gap: 3rem; 
-    margin-top: 4rem;
+    margin-top: 4rem ;
+    align-self: center;
+    justify-self: center;
    
  }
 .book-image {
-    padding: 3rem 0rem 0 5rem;
-    grid-column: 1 / span 1;
+    margin-left: 4rem;
+    align-self: flex-start;
+    justify-self: flex-end ;
+}
+
+.rectan {
+    background-color: var(--primary-color);
+    grid-column: 3 / span 1;
     grid-row: 1 / span 2;
+    width: 4rem;
+    justify-self: center;
 }
 
 .text {
-  margin-top: 3rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   grid-column: 2 / span 1;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 1;
 }
 
 .button-config{
-   text-align: center;
-   grid-column: 1 / span 1;
-   grid-row: 2 / span 1;
-   align-self: center;
-   margin: -200px 0 50px 45px  ;
+    align-self: flex-start;
+    justify-self: center;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+
 }
 
- 
  .background-primary-color {
      background-color: var(--background-main-color);
 
  }
  
- .container {
-     display: grid;
-    
- }
-
- 
- 
 p {
      font-family: "calibri light";
-     font-size: 2.8rem;
+     font-size: 2vw;
      text-indent: 4rem;
  }
 
@@ -125,23 +129,15 @@ p {
 h1 {
     text-align: center;
     font-family: "Bebas Neue";
-    font-size: 4rem;
+    font-size: 5vw;
     margin-bottom: 3rem;
 }
 
-article {
-    max-width: 100%;
-    background-color: orange;
-    color: #373435;
-    border-radius: 4px;
-    
-    padding-right: 50px;
-}
+section img{
+    height: 50vw; /*atributo que controla o tamanho da imagem 
+    foi você que fez assim ou eu sem querer ?) */
+} 
 
-article img {
-    height: 500px; /*atributo que controla o tamanho da imagem 
-    foi você que fez assim ou eu sem querer ?)*/
-}
 
 article img:hover {
     cursor: pointer;
