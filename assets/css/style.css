@@ -165,6 +165,7 @@ form {
 }
 
 #form-body {
+    margin-top: 6rem;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -219,7 +220,7 @@ form {
     text-decoration: none;
 }
 
-@media (min-width:768px) and (max-width:1000px) {
+@media (min-width:8021px) and (max-width:1000px) {
     .button-config {
         align-self: center;
         grid-column: 1 / span 2;
@@ -227,13 +228,18 @@ form {
     }
 }
 
-@media all and (max-width:767px) {
+@media (min-width:100px) and (max-width:820px) {
     .main-container{
+        margin-top: -1rem;
         grid-template-columns: 1fr;
    
     }
     .book-image {
-        grid-row: 1;
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        margin: 0;
+        
     }
     
     .rectan {
@@ -247,16 +253,26 @@ form {
     .text {
       display: flex;
       flex-direction: column;
+      justify-self: center;
       justify-content: space-between;
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1;
+      grid-column: 1 / span 1;
+      text-align: justify;
+      margin: 4rem 6rem 2rem 4rem;
+      
+    }
+    p {
+        font-size: 1.6rem
     }
     
     .button-config{
         align-self: flex-start;
         justify-self: center;
         grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
+        grid-row: 3 ;
+        width: 90vw;
+        font-size: 6vw;
+        
+    
     
     }
     
