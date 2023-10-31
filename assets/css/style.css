@@ -218,3 +218,47 @@ form {
     color: black;
     text-decoration: none;
 }
+
+@media (min-width:768px) and (max-width:1000px) {
+    .button-config {
+        align-self: center;
+        grid-column: 1 / span 2;
+
+    }
+}
+
+@media all and (max-width:767px) {
+    .main-container{
+        grid-template-columns: 1fr;
+   
+    }
+    .book-image {
+        grid-row: 1;
+    }
+    
+    .rectan {
+        background-color: var(--primary-color);
+        grid-column: 1;
+
+        width: 0;
+        justify-self: center;
+    }
+    
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+    }
+    
+    .button-config{
+        align-self: flex-start;
+        justify-self: center;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    
+    }
+    
+    
+}
